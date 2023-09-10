@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=none"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+            integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+            crossorigin="anonymous"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesh eet">
+
+
+        <link rel="stylesheet" href="summer.css" />
+        <title>IIT Times</title>
+    </head>
+    <body>
+        <!-- main page -->
+        <section class="main-page">
+            <!--  main page nav -->
+            <nav class="main-nav">
+                <ul class="main-nav-links">
+                    <li class="main-nav-first-child"><a href="#">Official News</a></li>
+                    <li><a href="#">Student Posts</a></li>
+                    <li><a href="#">Placements</a></li>
+                    <li class="main-nav-last-child"><a href="#">Public FAQs</a></li>
+                </ul>
+                <a href="javascript:void(0);" class="icon" onclick="toggleMenu1()">&#9776;</a>
+            </nav> 
+            <div class="main-modal">
+                <i class="fas fa-times"></i>
+                <p>Please Login to Explore.</p>
+            </div>
+
+            <div class="main">
+                <!-- main intro -->
+                <div class="main-intro">
+                    <h1>IIT Times</h1>
+                    <h4>Look inside IITs</h4>
+                </div>
+            
+                <!-- right -->
+                <div class="right-wrapper">
+                    <div class="right">
+                        <div class="right-content">
+                            <h2>Explore and Share</h2>
+                            <h3>Join IIT Times now</h3>
+                            <div>
+                            <button class="signup-btn">Sign-up</button>
+                            </div>
+                            <div>
+                            <button type="button" class="main-page-login-btn-right">Login</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of right -->
+            </div>
+            <!-- end of main -->
+            <!-- footer -->
+            <footer class="main-footer">
+                <ul>
+                    <li class="main-footer-first-child"><a href="#">About</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li class="main-footer-last-child"><a href="#">Privacy policy</a></li>
+                </ul>
+            </footer>
+            <!-- end of footer -->
+        </section>
+        <!-- end of main page -->
+    <!-- ---------------------------------------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------------- -->
+        <!-- login page -->
+        <section class="login-page">
+            <!-- login page nav -->
+            <nav class="login-page-nav">
+                <ul>
+                    <li id="login-home"><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Terms & conditions</a></li>
+                </ul>
+            </nav>
+            <!-- end of log page nav-->
+            <!-- login -->
+            <div class="login">
+                <div class="login-content">
+                    <h2>Log in to IIT Times</h2>
+                    <form class="login-form">
+                        <input type="text" placeholder="email or username" class="login-user-info"/>
+                        <input type="password" placeholder="password" class="login-user-password"/>
+                        <div>
+                            <button type="button" class="login-form-btn" id="login-form-btn">Log In</button>
+                            <input type="checkbox" class="login-form-checkbox" id="check"/>
+                            <label class="check-box-label" for="check">Remember me</label>
+                        </div>
+                        <a href="#">Forgot password?</a>
+                    </form>
+                </div>
+                <!-- <footer class="login-footer">
+                    <p>New to IIT Times?     <a href="#">Sign up</a></p>
+                </footer> -->
+            </div>
+            <!-- end of login -->
+
+            <!-- login modal -->
+            <div class="login-modal">
+                <i class="fas fa-times"></i>
+                <p>The username and password you entered did not match our records. Please double check and try again.</p>
+            </div>
+            <!-- end of login modal -->
+        </section>
+        <!-- end of login page -->
+    <!-- ---------------------------------------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------------- -->
+        <!-- home page -->
+        <section class="home-page">
+            <!-- home nav -->
+            <nav class="home-nav">
+                <div class="home-nav-icons">
+                    <a href="#" id="home-yes"><i class="fas fa-home"></i>IIT Times</a>
+                    <a href="#" id="home-official">Official posts</a>
+                    <a href="#" id="home-feeds">Student posts</a>
+                    <a href="#" id="home-placement">Placements</a>
+                    <a href="#" id="home-faqs">Public FAQs</a>
+                </div>
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search IIT Times" class="search-bar-input"/>
+                </div>
+                <div class="home-user" id="home-user">
+                    <div class="user-img-wrapper">
+                        <img src="user1.jpg" id="profile-pic">
+                    </div>
+                    <a href="#" class="user-link">Pavan Kumar</a>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </nav>
+            <!-- end of home nav -->
+            <div class="home-content-wrapper">
+                <div class="home-content">
+                    <div class="row">
+                        <div class="home-img" id="1">
+                            <img src="post-img-1.avif">
+                            <h2>IIT Roorkee</h2>
+                            <h4>@deptOfMath</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum distinctio quas asperiores quasi porro doloribus minus veniam ratione necessitatibus delectus atque voluptatum facere pariatur maiores aspernatur ipsa enim, amet consequatur.</p>
+                        </div>
+                    
+                        <div class="home-img" id="2">
+                            <img src="post-img-2.jpg">
+                            <h2>IIT Madrass</h2>
+                            <h4>@deptOfCSE</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur deleniti excepturi libero veniam architecto. Aliquam libero quidem nobis quos ratione est saepe beatae. Dicta, maxime impedit? Labore sit quos architecto?</p>
+                        </div>
+
+
+                        <div class="home-img" id="3">
+                            <img src="post-img-3.webp">
+                            <h2>IIT Madrass</h2>
+                            <h4>@deptOfEE</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, quibusdam alias iure soluta odit eius nam culpa quos, sunt iusto ullam asperiores aperiam inventore laudantium quidem, dolores natus impedit doloribus.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="home-img" id="4">
+                            <img src="post-img-4.jpg">
+                            <h2>IIT Bombay</h2>
+                            <h4>@OfficeOfIntRelations</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, quibusdam alias iure soluta odit eius nam culpa quos, sunt iusto ullam asperiores aperiam inventore laudantium quidem, dolores natus impedit doloribus.</p>
+                        </div>
+                        <div class="home-img" id="5">
+                            <img src="post-img-5.jpg">
+                            <h2>IIT Kharagpur</h2>
+                            <h4>@kshitij</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum distinctio quas asperiores quasi porro doloribus minus veniam ratione necessitatibus delectus atque voluptatum facere pariatur maiores aspernatur ipsa enim, amet consequatur.</p>
+                        </div>
+    
+                        
+                    </div>
+                </div>
+
+            </div>
+            <!-- home side bar -->
+            <div class="home-sidebar-wrapper" id="home-sidebar-wrapper">
+                <div class="home-sidebar">
+                    <div class="home-sidebar-header">
+                        <h2>Account info</h2>
+                        <i class="fas fa-times" id="home-sidebarX"></i>
+                    </div>
+                    <div class="sidebar-user">
+                        <div class="sidebar-user-img" id="home-sidebar-userimg">
+                            <img src="user1.jpg" id="profile-pic">
+                        </div>
+                        <div class="sidebar-user-info">
+                            <div class="name-with-logo">
+                                <h4 id="profile-name">Pavan Kumar</h4>
+                                <div class="sidebar-iit-kgp-logo">
+                                    <img src="iit-kgp.svg" id="sidebar-logo">
+                                </div>
+                            </div>
+                            <p id="username">@pavankumar</p>
+                        </div>
+                        <div>
+                            <p class="no-of-posts-paragraph"><span id="no-of-posts">711</span> Posts</p>
+                        </div>
+                        <div class="sidebar-list1">
+                            <ul>
+                                <li><a href="#"><i class="fas fa-user"></i> Profile</a></li>
+                                <li><a href="#"><i class="fas fa-feather-alt"></i> <span id="posts-doubts">Posts</span></a></li>
+                                <li><a href="#"><i class="far fa-bell"></i> Notifications</a></li>
+                                <li><a href="#"><i class="far fa-bookmark"></i> Bookmarks</a></li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-list2">
+                            <ul>
+                                <li><a href="#">Settings and Privacy</a></li>
+                                <li><a href="#">Help center</a></li>
+                                <li id="logout"><a href="#">Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- end of side bar -->
+        </section>
+        <!-- end of home page -->
+    <!-- ---------------------------------------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------------- -->
+        <!-- feeds page -->
+        <section class="feeds-page">
+            <!-- feeds nav -->
+            <nav class="feeds-nav">
+                <div class="icons">
+                    <a href="#" id="home"><i class="fas fa-home"></i>IIT Times</a>
+                    <a href="#" class="feeds-official" id="official">Official posts</a>
+                    <a href="#" class="feeds-yes" id="feeds">Student posts</a>
+                    <a href="#" id="placements">Placements</a>
+                    <a href="#" id="faqs">Public FAQs</a>
+                </div>
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search IIT Times" class="search-bar-input"/>
+                </div>
+                <div class="user" id="feeds-user">
+                    <div class="user-img-wrapper">
+                        <img src="user1.jpg" id="profile-pic">
+                    </div>
+                    <a href="#" class="user-link">Pavan Kumar</a>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </nav>
+            <!-- end of feeds nav -->
+
+            <!-- feeds content -->
+            <div class="feeds-content">
+                <div class="feeds-header">
+                    <!-- <div class="header-top">
+                        <h4>Home</h4>
+                        <i class="far fa-star"></i>
+                    </div> -->
+                    <div class="header-post">
+                        <div class="header-img-wrapper">
+                            <img src="user1.jpg">
+                        </div>
+                        <input type="text" placeholder="What's happening?!">
+                        <i class="far fa-image"></i>
+                        <i class="fas fa-video"></i>
+                        <i class="fas fa-camera"></i>
+                    </div>
+                </div>
+            
+
+                <div class="posts" id="posts">
+                    <div class="post">
+                        <div class="user-avatar">
+                            <img src="user2.webp">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-user-info">
+                                <h4>Swathi</h4>
+                                <img src="iit-kgp.svg" class="iit-kgp-logo">
+                                <span>@swathi 15m</span>
+                            </div>
+                            <p class="post-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem non ea rem natus ducimus eaque quos accusantium obcaecati, possimus doloremque repellat corrupti sequi mollitia corporis ex ullam eius nobis. Non!
+                            </p>
+                            <div class="post-img">
+                                <img src="post-img-1.avif">
+                            </div>
+                            <div class="post-icons">
+                                <i class="far fa-comment"></i>
+                                <i class="fas fa-retweet"></i>
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="post">
+                        <div class="user-avatar">
+                            <img src="user3.webp">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-user-info">
+                                <h4>Ramya</h4>
+                                <img src="iit-delhi.jpg" class="iit-delhi-logo">
+                                <span>@ramya 35m</span>
+                            </div>
+                            <p class="post-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem non ea rem natus ducimus eaque quos accusantium obcaecati, possimus doloremque repellat corrupti sequi mollitia corporis ex ullam eius nobis. Non!
+                            </p>
+                            <div class="post-img">
+                                <img src="post-img-2.jpg">
+                            </div>
+                            <div class="post-icons">
+                                <i class="far fa-comment"></i>
+                                <i class="fas fa-retweet"></i>
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="post">
+                        <div class="user-avatar">
+                            <img src="user4.avif">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-user-info">
+                                <h4>Raghuvaran</h4>
+                                <img src="iit-madrass.png" class="iit-madrass-logo">
+                                <span>@raghuvaran 40m</span>
+                            </div>
+                            <p class="post-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem non ea rem natus ducimus eaque quos accusantium obcaecati, possimus doloremque repellat corrupti sequi mollitia corporis ex ullam eius nobis. Non!
+                            </p>
+                            <div class="post-img">
+                                <img src="post-img-3.webp">
+                            </div>
+                            <div class="post-icons">
+                                <i class="far fa-comment"></i>
+                                <i class="fas fa-retweet"></i>
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="post">
+                        <div class="user-avatar">
+                            <img src="user5.avif">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-user-info">
+                                <h4>Santosh</h4>
+                                <img src="iit-bombay.png" class="iit-bombay-logo">
+                                <span>@santosh 55m</span>
+                            </div>
+                            <p class="post-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem non ea rem natus ducimus eaque quos accusantium obcaecati, possimus doloremque repellat corrupti sequi mollitia corporis ex ullam eius nobis. Non!
+                            </p>
+                            <div class="post-img">
+                                <img src="post-img-4.jpg">
+                            </div>
+                            <div class="post-icons">
+                                <i class="far fa-comment"></i>
+                                <i class="fas fa-retweet"></i>
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="post">
+                        <div class="user-avatar">
+                            <img src="user6.avif">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-user-info">
+                                <h4>Saswath singh</h4>
+                                <img src="iit-roorkee.png" class="iit-roorkee-logo">
+                                <span>@saswathsingh 1h 20m</span>
+                            </div>
+                            <p class="post-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem non ea rem natus ducimus eaque quos accusantium obcaecati, possimus doloremque repellat corrupti sequi mollitia corporis ex ullam eius nobis. Non!
+                            </p>
+                            <div class="post-img">
+                                <img src="post-img-5.jpg">
+                            </div>
+                            <div class="post-icons">
+                                <i class="far fa-comment"></i>
+                                <i class="fas fa-retweet"></i>
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="follow">
+                    <h3 class="follow-heading">Look who posted today</h3>
+                    <div class="search-bar">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search posts" class="search-bar-input"/>
+                    </div>
+                    <div class="follow-user">
+                        <div class="follow-user-img">
+                            <img src="user4.avif">
+                        </div>
+                        <div class="follow-user-info">
+                            <h4>Raghuvaran</h4>
+                            <p>@raghuvaran</p>
+                        </div>
+                        <button type="button" class="follow-btn">Read</button>
+                    </div>
+                    <div class="follow-user">
+                        <div class="follow-user-img">
+                            <img src="user7.avif">
+                        </div>
+                        <div class="follow-user-info">
+                            <h4>Lavanya</h4>
+                            <p>@lavanya</p>
+                        </div>
+                        <button type="button" class="follow-btn">Read</button>
+                    </div>
+                    <div class="follow-user">
+                        <div class="follow-user-img">
+                            <img src="user5.avif">
+                        </div>
+                        <div class="follow-user-info">
+                            <h4>Santosh</h4>
+                            <p>@santosh</p>
+                        </div>
+                        <button type="button" class="follow-btn">Read</button>
+                    </div>
+                    <div class="follow-link">
+                        <a href="#">Show more</a>
+                    </div>
+                    <footer class="follow-footer">
+                        <ul>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Privacy policy</a></li>
+                            <li><a href="#">Cookies</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">More</a></li>
+                        </ul>
+                    </footer>
+                </div>
+            </div>
+            <!-- end of feeds content -->
+
+            <button type="button" class="post-btn">
+                +<i class="fas fa-feather-alt"></i> Post
+            </button>
+
+            <!-- post modal -->
+            <div class="modal-wrapper">
+                <div class="modal">
+                    <div class="modal-header">
+                        <i class="fas fa-times"></i>
+                        <button type="button">Post</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-img">
+                            <img src="user1.jpg" id="profile-pic">
+                        </div>
+                        <textarea placeholder="What's happening?!" class="modal-input" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="modal-icons">
+                            <i class="fas fa-smile"></i>
+                            <i class="fas fa-image"></i>
+                            <i class="fas fa-video"></i>
+                            <i class="fas fa-camera"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of post modal  -->
+
+            <!-- side bar -->
+            <div class="sidebar-wrapper" id="feeds-sidebar-wrapper">
+                <div class="sidebar">
+                    <div class="sidebar-header">
+                        <h2>Account info</h2>
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <div class="sidebar-user">
+                        <div class="sidebar-user-img">
+                            <img src="user1.jpg" id="profile-pic">
+                        </div>
+                        <div class="sidebar-user-info">
+                            <div class="name-with-logo">
+                                <h4 id="profile-name">Pavan Kumar</h4>
+                                <div class="sidebar-iit-kgp-logo" id="sidebar-logo">
+                                    <img src="iit-kgp.svg">
+                                </div>
+                            </div>
+                            <p id="username">@pavankumar</p>
+                        </div>
+                        <div >
+                            <p class="no-of-posts-paragraph"><span id="no-of-posts">711</span> Posts</p>
+                        </div>
+                        <div class="sidebar-list1">
+                            <ul>
+                                <li><a href="#"><i class="fas fa-user"></i> Profile</a></li>
+                                <li><a href="#" ><i class="fas fa-feather-alt"></i> <span id="feeds-posts-doubts">Posts</span></a></li>
+                                <li><a href="#"><i class="far fa-bell"></i> Notifications</a></li>
+                                <li><a href="#"><i class="far fa-bookmark"></i> Bookmarks</a></li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-list2">
+                            <ul>
+                                <li><a href="#">Settings and Privacy</a></li>
+                                <li><a href="#">Help center</a></li>
+                                <li id="logout"><a href="#">Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- end of side bar -->
+        </section>
+        <!-- end of feeds page -->
+
+        <!-- official posts -->
+        <section class="official-page">
+            <!-- official nav -->
+            <nav class="official-nav">
+                <div class="icons">
+                    <a href="#" id="home"><i class="fas fa-home"></i>IIT Times</a>
+                    <a href="#" class="official-yes" id="official">Official posts</a>
+                    <a href="#" class="official-feeds" id="feeds">Student posts</a>
+                    <a href="#" id="placements">Placements</a>
+                    <a href="#" id="faqs">Public FAQs</a>
+                </div>
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search IIT Times" class="search-bar-input"/>
+                </div>
+                <div class="user" id="official-sidebar-link">
+                    <div class="user-img-wrapper">
+                        <img src="user1.jpg" id="profile-pic">
+                    </div>
+                    <a href="#" class="user-link">Pavan Kumar</a>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </nav>
+            <!-- end of official nav -->
+
+            <!-- official content -->
+            <div class="official-content">
+                <div class="official-header" id="official-header">
+                    
+                    <div class="header-post">
+                        <div class="official-header-img-wrapper">
+                            <img src="iit-kgp.svg">
+                        </div>
+                        <input type="text" placeholder="What's happening?!">
+                        <i class="far fa-image"></i>
+                        <i class="fas fa-video"></i>
+                        <i class="fas fa-camera"></i>
+                    </div>
+                </div>
+            
+
+                <div class="posts" id="official-posts">
+                    <div class="post" id="10">
+                        <div class="user-avatar">
+                            <img src="iit-roorkee.png">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-user-info">
+                                <h4>IIT Roorkee</h4>
+                                <span>@deptOfMath 15m</span>
+                            </div>
+                            <p class="post-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem non ea rem natus ducimus eaque quos accusantium obcaecati, possimus doloremque repellat corrupti sequi mollitia corporis ex ullam eius nobis. Non!
+                            </p>
+                            <div class="post-img">
+                                <img src="post-img-1.avif">
+                            </div>
+                            <div class="post-icons">
+                                <i class="far fa-comment"></i>
+                                <i class="fas fa-retweet"></i>
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="post" id="20">
+                        <div class="user-avatar">
+                            <img src="iit-madrass.png">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-user-info">
+                                <h4>IIT Madrass</h4>
+                                <span>@deptOfCSE 35m</span>
+                            </div>
+                            <p class="post-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem non ea rem natus ducimus eaque quos accusantium obcaecati, possimus doloremque repellat corrupti sequi mollitia corporis ex ullam eius nobis. Non!
+                            </p>
+                            <div class="post-img">
+                                <img src="post-img-2.jpg">
+                            </div>
+                            <div class="post-icons">
+                                <i class="far fa-comment"></i>
+                                <i class="fas fa-retweet"></i>
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="post" id="30">
+                        <div class="user-avatar">
+                            <img src="iit-madrass.png">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-user-info">
+                                <h4>IIT Madrass</h4>
+                                <span>@deptOfEE 40m</span>
+                            </div>
+                            <p class="post-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem non ea rem natus ducimus eaque quos accusantium obcaecati, possimus doloremque repellat corrupti sequi mollitia corporis ex ullam eius nobis. Non!
+                            </p>
+                            <div class="post-img">
+                                <img src="post-img-3.webp">
+                            </div>
+                            <div class="post-icons">
+                                <i class="far fa-comment"></i>
+                                <i class="fas fa-retweet"></i>
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="post" id="40">
+                        <div class="user-avatar">
+                            <img src="iit-bombay.png">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-user-info">
+                                <h4>IIT Bombay</h4>
+                                <span>@OfficeOfIntRelations 55m</span>
+                            </div>
+                            <p class="post-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem non ea rem natus ducimus eaque quos accusantium obcaecati, possimus doloremque repellat corrupti sequi mollitia corporis ex ullam eius nobis. Non!
+                            </p>
+                            <a href="Curtin-IITKgp Symposium 26 June 2023 R2_22062023 (1).pdf" target="_blank" class="pdf-link">More Details are in this <i class='fas fa-file-pdf'></i></a>
+
+                            <div class="post-icons">
+                                <i class="far fa-comment"></i>
+                                <i class="fas fa-retweet"></i>
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="post" id="50">
+                        <div class="user-avatar">
+                            <img src="iit-kgp.svg">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-user-info">
+                                <h4>Kshitij</h4>
+                                <span>@kshitij 1h 20m</span>
+                            </div>
+                            <p class="post-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem non ea rem natus ducimus eaque quos accusantium obcaecati, possimus doloremque repellat corrupti sequi mollitia corporis ex ullam eius nobis. Non!
+                            </p>
+                            <div class="post-img">
+                                <img src="post-img-5.jpg">
+                            </div>
+                            <div class="post-icons">
+                                <i class="far fa-comment"></i>
+                                <i class="fas fa-retweet"></i>
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="follow">
+                    <h3 class="follow-heading">Look who posted today</h3>
+                    <div class="search-bar">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search posts" class="search-bar-input"/>
+                    </div>
+                    <div class="follow-user">
+                        <div class="follow-user-img">
+                            <img src="iit-kgp.svg">
+                        </div>
+                        <div class="follow-user-info">
+                            <h4>kshitij</h4>
+                            <p>@kshitij</p>
+                        </div>
+                        <button type="button" class="follow-btn">Read</button>
+                    </div>
+                    <div class="follow-user">
+                        <div class="follow-user-img">
+                            <img src="iit-bombay.png">
+                        </div>
+                        <div class="follow-user-info">
+                            <h4>IIT Bombay</h4>
+                            <p>@deptOfChemEngg</p>
+                        </div>
+                        <button type="button" class="follow-btn">Read</button>
+                    </div>
+                    <div class="follow-user">
+                        <div class="follow-user-img">
+                            <img src="iit-roorkee.png">
+                        </div>
+                        <div class="follow-user-info">
+                            <h4>IIT Roorkee</h4>
+                            <p>@OfficeOfIntRelations</p>
+                        </div>
+                        <button type="button" class="follow-btn">Read</button>
+                    </div>
+                    <div class="follow-link">
+                        <a href="#">Show more</a>
+                    </div>
+                    <footer class="follow-footer">
+                        <ul>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Privacy policy</a></li>
+                            <li><a href="#">Cookies</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">More</a></li>
+                        </ul>
+                    </footer>
+                </div>
+            </div>
+            <!-- end of official content -->
+
+            <button type="button" class="post-btn" id="official-post-btn">
+                +<i class="fas fa-feather-alt"></i> Post
+            </button>
+
+            <!-- post modal -->
+            <div class="modal-wrapper" id="official-post-modal-wrapper">
+                <div class="modal">
+                    <div class="modal-header">
+                        <i class="fas fa-times"></i>
+                        <button type="button">Post</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-img">
+                            <img src="user1.jpg" id="profile-pic">
+                        </div>
+                        <textarea placeholder="What's happening?!" class="modal-input" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="modal-icons">
+                            <i class="fas fa-smile"></i>
+                            <i class="fas fa-image"></i>
+                            <i class="fas fa-video"></i>
+                            <i class="fas fa-camera"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of post modal  -->
+
+            <!-- side bar -->
+            <div class="official-sidebar-wrapper">
+                <div class="sidebar">
+                    <div class="sidebar-header">
+                        <h2>Account info</h2>
+                        <i class="fas fa-times" id="official-sidebarX"></i>
+                    </div>
+                    <div class="sidebar-user">
+                        <div class="sidebar-user-img">
+                            <img src="user1.jpg" id="profile-pic">
+                        </div>
+                        <div class="sidebar-user-info">
+                            <div class="name-with-logo">
+                                <h4 id="profile-name">Pavan Kumar</h4>
+                                <div class="sidebar-iit-kgp-logo" id="sidebar-logo">
+                                    <img src="iit-kgp.svg">
+                                </div>
+                            </div>
+                            <p id="username">@pavankumar</p>
+                        </div>
+                        <div>
+                            <p class="no-of-posts-paragraph"><span id="no-of-posts">711</span> Posts</p>
+                        </div>
+                        <div class="sidebar-list1">
+                            <ul>
+                                <li><a href="#"><i class="fas fa-user"></i> Profile</a></li>
+                                <li><a href="#"><i class="fas fa-feather-alt"></i> <span id="official-posts-doubts">Posts</span></a></li>
+                                <li><a href="#"><i class="far fa-bell"></i> Notifications</a></li>
+                                <li><a href="#"><i class="far fa-bookmark"></i> Bookmarks</a></li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-list2">
+                            <ul>
+                                <li><a href="#">Settings and Privacy</a></li>
+                                <li><a href="#">Help center</a></li>
+                                <li id="logout"><a href="#">Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- end of side bar -->
+        </section>
+        <!-- end of official page -->
+
+        <!-- placements page -->
+        <section class="placement-page">
+            <!-- placements nav -->
+            <nav class="placement-nav">
+                <div class="icons">
+                    <a href="#" id="placement-home"><i class="fas fa-home"></i>IIT Times</a>
+                    <a href="#" id="placement-official">Official posts</a>
+                    <a href="#" id="placement-feeds">Student posts</a>
+                    <a href="#" id="placements">Placements</a>
+                    <a href="#" id="placement-faqs">Public FAQs</a>
+                </div>
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search IIT Times" class="search-bar-input"/>
+                </div>
+                <div class="user" id="placement-sidebar-link">
+                    <div class="user-img-wrapper">
+                        <img src="user1.jpg" id="profile-pic">
+                    </div>
+                    <a href="#" class="user-link">Pavan Kumar</a>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </nav>
+            <!-- end of placements nav -->   
+
+            <!-- placement content -->
+            <div class="placement-content">
+                <!-- iit list -->
+                <div class="list-iit">
+                    <ul class="iit" id="iit1">
+                        <li class="iit-first-child">  <a href="#">IIT Kharagpur</a></li>
+                        <li><a href="#">IIT Madras</a></li>
+                        <li><a href="#">IIT Bombay</a></li>
+                        <li><a href="#">IIT Delhi</a></li>
+                        <li><a href="#">IIT Roorkee</a></li>
+                        <li><a href="#">IIT kanpur</a></li>
+                        <li><a href="#">IIT Guwahati</a></li>
+                        <li><a href="#">IIT Indore</a></li>
+                        <li><a href="#">IIT Dhanbad</a></li>
+                        <li class="iit-last-child"><a href="#">IIT Hyderabad</a></li>
+                    </ul>
+                    <ul class="iit" id="iit2">
+                        <li><a href="#">IIT Bhubaneswar</a></li>
+                        <li><a href="#">IIT Palakkad</a></li>
+                        <li><a href="#">IIT Mandi</a></li>
+                        <li><a href="#">IIT Jhodpur</a></li>
+                        <li><a href="#">IIT Goa</a></li>
+                        <li><a href="#">IIT Tirupati</a></li>
+                        <li><a href="#">IIT Varanasi</a></li>
+                        <li><a href="#">IIT Ropar</a></li>
+                        <li><a href="#">IIT Ghandhinagar</a></li>
+                    </ul>
+                </div>
+                <!-- end iit list -->
+            </div>
+            <!-- end of placement content --> 
+            <!-- side bar -->
+            <div class="placement-sidebar-wrapper">
+                <div class="sidebar">
+                    <div class="sidebar-header">
+                        <h2>Account info</h2>
+                        <i class="fas fa-times" id="placement-sidebarX"></i>
+                    </div>
+                    <div class="sidebar-user">
+                        <div class="sidebar-user-img">
+                            <img src="user1.jpg" id="profile-pic">
+                        </div>
+                        <div class="sidebar-user-info">
+                            <div class="name-with-logo">
+                                <h4 id="profile-name">Pavan Kumar</h4>
+                                <div class="sidebar-iit-kgp-logo" id="sidebar-logo">
+                                    <img src="iit-kgp.svg">
+                                </div>
+                            </div>
+                            <p id="username">@pavankumar</p>
+                        </div>
+                        <div>
+                            <p class="no-of-posts-paragraph"><span id="no-of-posts">711</span> Posts</p>
+                        </div>
+                        <div class="sidebar-list1">
+                            <ul>
+                                <li><a href="#"><i class="fas fa-user"></i> Profile</a></li>
+                                <li><a href="#"><i class="fas fa-feather-alt"></i> <span id="official-posts-doubts">Posts</span></a></li>
+                                <li><a href="#"><i class="far fa-bell"></i> Notifications</a></li>
+                                <li><a href="#"><i class="far fa-bookmark"></i> Bookmarks</a></li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-list2">
+                            <ul>
+                                <li><a href="#">Settings and Privacy</a></li>
+                                <li><a href="#">Help center</a></li>
+                                <li id="logout"><a href="#">Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- end of side bar -->   
+
+        </section>
+        <!-- end of placements page -->
+
+        <!-- faqs page -->
+        <section class="faqs-page">
+            <!-- faqs nav -->
+            <nav class="faqs-nav">
+                <div class="icons">
+                    <a href="#" id="faqs-home"><i class="fas fa-home"></i>IIT Times</a>
+                    <a href="#" id="faqs-official">Official posts</a>
+                    <a href="#" id="faqs-feeds">Student posts</a>
+                    <a href="#" id="faqs-placement">Placements</a>
+                    <a href="#" id="faqs-yes">Public FAQs</a>
+                </div>
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search IIT Times" class="search-bar-input"/>
+                </div>
+                <div class="user" id="faqs-sidebar-link">
+                    <div class="user-img-wrapper">
+                        <img src="user1.jpg" id="profile-pic">
+                    </div>
+                    <a href="#" class="user-link">Pavan Kumar</a>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </nav>
+            <!-- end of faqs nav --> 
+
+            <!-- faqs content -->
+            <div class="faqs-content">
+                <div class="faqs-header" id="faqs-header">
+                    <div class="header-search">
+                        <div class="search-bar">
+                            <i class="fas fa-search"></i>
+                            <input type="text" placeholder="Search Public FAQs" class="search-bar-input"/>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="questions" id="faqs-questions">
+                    <div class="question">
+                        <div class="faqs-user-avatar">
+                            <img src="user6.avif" >
+                        </div>
+                        <div class="post-content">
+                            <div class="post-user-info">
+                                <h4>Ram</h4>
+                                <span>@ram 24 july</span>
+                            </div>
+                            <p class="faqs-text" >
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem non ea rem natus ducimus eaque quos accusantium obcaecati, possimus doloremque repellat corrupti sequi mollitia corporis ex ullam eius nobis. Non!
+                            </p>
+
+                            <div class="post-icons">
+                                <i><span>3</span> answers</i>
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                                <button type="button" class="answer-btn" id="answer-btn">Answer</button> 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- -------------------------------------- -->
+                    <div class="question">
+                        <div class="faqs-user-avatar">
+                            <img src="user4.avif">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-user-info">
+                                <h4>Sam</h4>
+                                <span>@Sam 15 june</span>
+                            </div>
+                            <p class="faqs-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem non ea rem natus ducimus eaque quos accusantium obcaecati, possimus doloremque repellat corrupti sequi mollitia corporis ex ullam eius nobis. Non!
+                            </p>
+                            
+                            <div class="post-icons">
+                                <i><span>2</span> answers</i>
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                                <button type="button" class="answer-btn" id="answer-btn">Answer</button> 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ------------------------------------------ -->
+                    <div class="question">
+                        <div class="faqs-user-avatar">
+                            <img src="user7.avif">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-user-info">
+                                <h4>Soumya</h4>
+                                <span>@soumya 12 june</span>
+                            </div>
+                            <p class="faqs-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem non ea rem natus ducimus eaque quos accusantium obcaecati, possimus doloremque repellat corrupti sequi mollitia corporis ex ullam eius nobis. Non!
+                            </p>
+                            
+                            <div class="post-icons">
+                                <i><span>1</span> answers</i>
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                                <button type="button" class="answer-btn" id="answer-btn">Answer</button> 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ------------------------------------------ -->
+                    <div class="question">
+                        <div class="faqs-user-avatar">
+                            <img src="user2.webp">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-user-info">
+                                <h4>kartik</h4>
+                                <span>@kartika 1 may</span>
+                            </div>
+                            <p class="faqs-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem non ea rem natus ducimus eaque quos accusantium obcaecati, possimus doloremque repellat corrupti sequi mollitia corporis ex ullam eius nobis. Non!
+                            </p>
+                            
+                            <div class="post-icons">
+                                <i><span>7</span> answers</i>
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                                <button type="button" class="answer-btn" id="answer-btn">Answer</button> 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ----------------------------------------- -->
+                    <div class="question">
+                        <div class="faqs-user-avatar">
+                            <img src="user5.avif">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-user-info">
+                                <h4>Krishna</h4>
+                                <span>@krishna 1 jan</span>
+                            </div>
+                            <p class="faqs-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem non ea rem natus ducimus eaque quos accusantium obcaecati, possimus doloremque repellat corrupti sequi mollitia corporis ex ullam eius nobis. Non!
+                            </p>
+                            
+                            <div class="post-icons">
+                                <i><span>3</span> answers</i>
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                                <button type="button" class="answer-btn" id="answer-btn">Answer</button> 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ------------------------------------------ -->
+                    <div class="question">
+                        <div class="faqs-user-avatar">
+                            <img src="user7.avif">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-user-info">
+                                <h4>Gopal</h4>
+                                <span>@gopal 12 dec 2022</span>
+                            </div>
+                            <p class="faqs-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem non ea rem natus ducimus eaque quos accusantium obcaecati, possimus doloremque repellat corrupti sequi mollitia corporis ex ullam eius nobis. Non!
+                            </p>
+                            
+                            <div class="post-icons">
+                                <i><span>4</span> answers</i>
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                                <button type="button" class="answer-btn" id="answer-btn">Answer</button> 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ------------------------------------------ -->                           
+                </div>
+                
+            </div>
+            <!-- end of faqs content -->
+
+            <button type="button" class="ask-btn" id="ask-btn">
+                Ask Question
+            </button> 
+
+            <!-- post modal -->
+            <div class="modal-wrapper" id="faqs-post-modal-wrapper">
+                <div class="modal">
+                    <div class="modal-header">
+                        <i class="fas fa-times" id="faqs-post-modalX"></i>
+                        <button type="button">Post</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-img">
+                            <img src="user1.jpg" id="profile-pic">
+                        </div>
+                        <textarea placeholder="Write your question here" class="faqs-input" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="modal-icons">
+                            <i class="fas fa-smile"></i>
+                            <i class="fas fa-image"></i>
+                            <i class="fas fa-video"></i>
+                            <i class="fas fa-camera"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of post modal  -->
+
+            <!-- side bar -->
+            <div class="faqs-sidebar-wrapper">
+                <div class="sidebar">
+                    <div class="sidebar-header">
+                        <h2>Account info</h2>
+                        <i class="fas fa-times" id="faqs-sidebarX"></i>
+                    </div>
+                    <div class="sidebar-user">
+                        <div class="sidebar-user-img">
+                            <img src="user1.jpg" id="profile-pic">
+                        </div>
+                        <div class="sidebar-user-info">
+                            <div class="name-with-logo">
+                                <h4 id="profile-name">Pavan Kumar</h4>
+                                <div class="sidebar-iit-kgp-logo" id="sidebar-logo">
+                                    <img src="iit-kgp.svg">
+                                </div>
+                            </div>
+                            <p id="username">@pavankumar</p>
+                        </div>
+                        <div>
+                            <p class="no-of-posts-paragraph"><span id="no-of-posts">711</span> Posts</p>
+                        </div>
+                        <div class="sidebar-list1">
+                            <ul>
+                                <li><a href="#"><i class="fas fa-user"></i> Profile</a></li>
+                                <li><a href="#"><i class="fas fa-feather-alt"></i> <span id="official-posts-doubts">Posts</span></a></li>
+                                <li><a href="#"><i class="far fa-bell"></i> Notifications</a></li>
+                                <li><a href="#"><i class="far fa-bookmark"></i> Bookmarks</a></li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-list2">
+                            <ul>
+                                <li><a href="#">Settings and Privacy</a></li>
+                                <li><a href="#">Help center</a></li>
+                                <li id="logout"><a href="#">Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- end of side bar -->
+        </section>
+        <!-- end of faqs page -->
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        <script src="summer.js"></script>
+    </body>
+</html>  
