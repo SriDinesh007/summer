@@ -693,6 +693,11 @@ for(let l of logout)
     officialPage.style.display='none';
     placementPage.style.display='none';
     faqsPage.style.display='none';
+    sidebarWrapper.style.display='none';
+    placementSidebarWrapper.style.display='none';
+    faqsSidebarWrapper.style.display='none';
+    officialSidebar.style.display='none';
+    homeSidebarWrapper.style.display='none';
   })
 }
 
