@@ -259,7 +259,7 @@ loginFormBtn.addEventListener('click', () => {
     const profilePics=document.querySelectorAll('#profile-pic');
     for(let pic of profilePics)
     {
-        pic.src="gopal.webp";
+        pic.src="images/gopal.webp";
     }
     const user=document.querySelectorAll('.user-link');
     for(let x of user) x.innerText='Gopal';
@@ -305,7 +305,7 @@ loginFormBtn.addEventListener('click', () => {
     const profilePics=document.querySelectorAll('#profile-pic');
     for(let pic of profilePics)
     {
-        pic.src="iit-kgp.svg";
+        pic.src="images/iit-kgp.svg";
     }
     const user=document.querySelectorAll('.user-link');
     for(let x of user) x.innerText='IIT kharagpur';
@@ -396,14 +396,14 @@ function createNewPost()
         <div class="post-content">
             <div class="post-user-info">
                 <h4>${h4}</h4>
-                <img src="iit-kgp.svg" class="iit-kgp-logo">
+                <img src="images/iit-kgp.svg" class="iit-kgp-logo">
                 <span>${username} just now</span>
             </div>
             <p class="post-text">
                 ${textAreaValue}
             </p>
             <div class="post-img">
-                <img src="post-img-3.webp">
+                <img src="images/post-img-3.webp">
             </div>
             <div class="post-icons">
                 <i class="far fa-comment"></i>
@@ -500,7 +500,7 @@ function createNewPostOfficial()
                 ${textAreaValue}
             </p>
             <div class="post-img">
-                <img src="post-img-3.webp">
+                <img src="images/post-img-3.webp">
             </div>
             <div class="post-icons">
                 <i class="far fa-comment"></i>
