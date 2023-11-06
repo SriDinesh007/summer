@@ -2721,7 +2721,7 @@ a {
 
 @media only screen and (min-width: 2000px){
     /* main page */
-    .right {
+    /* .right {
         width:80rem;
     }
     .right-content h2 {
@@ -2761,7 +2761,7 @@ a {
         font-size: 3rem;
         padding: 2rem 18rem;
         letter-spacing: 0.3rem;
-    }
+    } */
     /* end of main-page */
 }
 
